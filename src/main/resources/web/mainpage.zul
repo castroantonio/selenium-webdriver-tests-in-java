@@ -1,0 +1,8 @@
+<zk>
+  <window title="MainPage - Selenium - Java - Spring Boot - ZK" border="normal"
+           viewModel="@id('vm') @init('com.castroantonio.selenium.controller.MainPageController')">
+      <textbox value="@bind(vm.name)" placeholder="Your name"/>  
+      <button label="Submit" onClick="@command('submit')" />
+      <label value="@bind(vm.output)"/>
+  </window>
+</zk>
